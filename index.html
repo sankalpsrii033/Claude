@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXORA — Building What Comes Next</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="custom-cursor"></div>
+    
+    <div id="loader" class="loader">
+        <div class="loader-content">
+            <h1 class="loader-title">NEXORA</h1>
+            <div class="loader-progress">
+                <span id="loader-count">00</span>
+            </div>
+            <div class="scan-line"></div>
+        </div>
+    </div>
+
+    <nav class="nav">
+        <div class="nav-logo">NEXORA</div>
+        <div class="nav-links">
+            <a href="#hero" class="nav-link" data-section="0">ABOUT</a>
+            <a href="#intelligence" class="nav-link" data-section="1">SYSTEMS</a>
+            <a href="#robotics" class="nav-link" data-section="2">VISION</a>
+            <a href="#contact" class="nav-link" data-section="5">CONTACT</a>
+        </div>
+    </nav>
+
+    <div class="ui-overlay">
+        <div class="system-indicator">NXR / 001</div>
+        <div class="status-indicator">SYSTEM ONLINE</div>
+        <div class="latency-indicator">LATENCY 0.02</div>
+    </div>
+
+    <canvas id="scene"></canvas>
+
+    <div class="content">
+        <section id="hero" class="section hero-section" data-section="0">
+            <div class="hero-content">
+                <h1 class="hero-title">NEXORA</h1>
+                <p class="hero-subtitle">BUILDING WHAT COMES NEXT.</p>
+                <p class="hero-description">INTELLIGENCE. MACHINES. SPATIAL COMPUTING.</p>
+                <button class="cta-button">ENTER THE FUTURE →</button>
+            </div>
+        </section>
+
+        <section id="intelligence" class="section" data-section="1">
+            <div class="section-content">
+                <div class="section-number">01</div>
+                <h2 class="section-title">INTELLIGENCE</h2>
+                <p class="section-subtitle">Machines that understand complexity.</p>
+            </div>
+        </section>
+
+        <section id="robotics" class="section" data-section="2">
+            <div class="section-content">
+                <div class="section-number">02</div>
+                <h2 class="section-title">ROBOTICS</h2>
+                <p class="section-subtitle">From computation to physical intelligence.</p>
+                <button class="cta-button secondary">EXPLORE SYSTEM →</button>
+            </div>
+        </section>
+
+        <section id="spatial" class="section" data-section="3">
+            <div class="section-content">
+                <div class="section-number">03</div>
+                <h2 class="section-title">SPATIAL COMPUTING</h2>
+                <p class="section-subtitle">Reality becomes an interface.</p>
+            </div>
+        </section>
+
+        <section id="core" class="section" data-section="4">
+            <div class="section-content">
+                <h2 class="section-title">THE CORE</h2>
+                <p class="section-subtitle">Everything begins with intelligence.</p>
+                <div class="core-list">
+                    <div class="core-item" style="animation-delay: 0.1s">01 — INTELLIGENCE</div>
+                    <div class="core-item" style="animation-delay: 0.3s">02 — MACHINES</div>
+                    <div class="core-item" style="animation-delay: 0.5s">03 — SPACE</div>
+                    <div class="core-item" style="animation-delay: 0.7s">04 — POSSIBILITY</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section final-section" data-section="5">
+            <div class="section-content">
+                <h2 class="final-title">READY FOR WHAT'S NEXT?</h2>
+                <div class="final-logo">NEXORA</div>
+                <button class="cta-button">ENTER THE FUTURE →</button>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
